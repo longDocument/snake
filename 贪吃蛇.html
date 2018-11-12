@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #map {
+            width: 800px;
+            height: 600px;
+            background-color: #ccc;
+            position: relative;
+            left: 0px;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+<div id="map" class="map"></div>
+<script src="common.js"></script>
+<script src="Food.js"></script>
+<script src="Snake.js"></script>
+<script src="Game.js"></script>
+<script>
+        var map = id('map');//获取地图
+
+        //调用map中的游戏对象(实例化)
+        var game1 =new Game(map);
+        //调用游戏对象方法
+        game1.start();
+
+
+
+
+        //调用食物对象(实例化)
+        // var ff =new Food();(第一步)
+        //调用食物对象方法
+        // ff.render(map);
+        // //
+        //调用蛇对象(实例化)
+        // var f2 =new Snake();(第二步)
+        //调用蛇对象方法
+        // f2.render(map);
+</script>
+</body>
+</html>
